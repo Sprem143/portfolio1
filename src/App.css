@@ -1,7 +1,36 @@
 body{
     margin: 0;
   }
-  
+  #atxt{
+    /* margin-left: 12vw; */
+    font-family: 'poppins', sans-serif;
+    position: relative;
+    font-size: 5vh;
+    -webkit-text-stroke: 0.5vw #383d52;
+    text-transform: uppercase;
+  }
+  #atxt::before{
+    font-family:Arial, Helvetica, sans-serif;
+   content: attr(data-text);
+   position:absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   color: rgb(6, 214, 44);
+   -webkit-text-stroke: 0.2vw rgb(196, 30, 188);
+   border-right: 2px solid rgb(196, 30, 188);
+   overflow: hidden;
+   animation: animate 6s linear infinite;
+  }
+  @keyframes animate {
+    0%,100%{
+      width: 0%;
+    }
+    70%,90%{
+      width: 100%;
+    }
+  }
   /* body Header */
   #body-header{
     height: 65vh;
@@ -66,7 +95,7 @@ body{
   }
   
   #name-social-container{
-    margin-top: 20vh;
+    margin-top: 4vh !important;
   }
   /* Social icons */
   .social-icons li a i{
@@ -79,11 +108,20 @@ body{
     box-shadow:0px 0px 8px 4px rgb(248, 247, 247);
   }
   #about{
+    background-image: url("/static/image/bg1.png");
+    background-size:contain;
+    background-position:right;
+    background-repeat: no-repeat;
+    
     height:auto ;
     width: 100%;
     position: relative;
+    font-size:1.3vw;
   }
-  
+  .dfac{
+    display: flex;
+    align-items: center;
+  }
   #my-image{
   height: 12rem;
   width: 12rem;
@@ -114,9 +152,6 @@ body{
   section:nth-child(2n+1){
     background-color: white;
   }
-  section:nth-child(2n){
-  background-color: rgb(230, 229, 229);
-  }
   
   #about{
     height: auto;
@@ -137,9 +172,17 @@ body{
     margin-right:0.5rem;
   }
   .mb75px{
-    margin-bottom: 75px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /* skill section */
+  #skill{
+    background-image: url(/static/image/skill.jpg);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+  }
   .skill-display{
     width: 70%;
     display: flex;
@@ -175,7 +218,7 @@ body{
     margin-bottom: 2px;
   }
   .forty{
-  width: 40%;
+  width: 60%;
   height: inherit;
   }
   .mb-red{
@@ -200,74 +243,88 @@ body{
         /* Timeline section */
   
   .timeline{
-            width: 75%;
+    background-image: url(/static/image/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+            width: 100%;
             position: relative;
-            border: 2px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1vw;
         }
-  .timeline-box{
-            width: 40%;
-            min-height: 150px;
-            border: 1px solid black;
-            margin: 5px;
-            left: 5%;
-            position: relative;
-        }
-  .timeline-box:nth-child(2n){
-        left: 53%;
-        }
-  .timeline-divider{
-            left: 50%;
-            position: absolute;
-            width: 0;
-            height: 75%;
-            border: 3px dashed black;
-            top: 10%;
-        }
-  .timeline-traveller{
-   position: sticky;
-   top: 15%;
-   transform: rotate(90deg);
-   font-size: 1.8rem;
-  }
-  .timeline-box:nth-child(2n+1):after{
-    content: '';
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 50%;
-    background-color:red;
-    position: absolute;
-    top:30%;
-    right:-2.8rem;
-    z-index: 1;
-  }
-  .timeline-box:nth-child(2n)::after{
-    content: '';
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 50%;
-    background-color:red;
-    position: absolute;
-    top:30%;
-    left:-2.15rem;
-    z-index: 1;
-  }
+  .project{
+    border: 1px solid black;
+    padding: 1vw;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+align-items: center;  }
+ .ph{
+  color: rgb(245, 0, 200);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+ }
+ .pc{
+  color: rgb(0, 136, 255);
+  border: 1px solid black;
+  padding: 5px 2vw;
+  border-radius: 10px;
+ }
+ /* education */
+ .education{
+  background-image: url(/static/image/edu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+ }
+ .ed-h{
+  font-weight: bold;
+  color: rgb(241, 98, 15);
+ }
+ .degree{
+  border: 1px solid black;
+  width: 20vw;
+  padding: 1vw;
+  margin: 0.3vw;
+ }
+.con{
+  background-image: url(/static/image/contact.png);
+  background-size: contain;
+ background-repeat: no-repeat;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.con-div{
+  width: 40vw;
+  /* border: 1px solid black; */
+  /* background-color: rgba(240, 228, 211, 0.361); */
+  padding: 2vw;
+  color: rgb(10, 18, 228);
+}
   .si:hover{
     border-radius: 50%;
     padding: 2px;
      box-shadow: -0px -0px 5px 5px white;
   }
-  @media screen and (max-width:600px){
-    .timeline-divider{
-        left:8%;
-    }
-    .timeline-box{
-        left:12% !important;
-        width: 80%;
-    }
-    .timeline-traveller{
-        left:8%;
-    }
-    .timeline-box::after{
-        left:-7% !important;
-    }
+  @media screen and (max-width:760px){
+   .timeline{
+    flex-direction: column;
+   }
+   .project{
+    margin: 10px;
+   }
+   .education{
+    flex-direction: column;
+    align-items:center ;
+   }
+   .project{
+    width: 80%;
+   }
+   .degree{
+    width: 60%;
+   }
   }
