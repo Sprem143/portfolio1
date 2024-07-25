@@ -48,7 +48,7 @@ export default function App() {
       <main>
         <section id="about">
           <div id="my-image"> <img src="/static/image/profile.jpg" alt="NA" /></div>
-          <p style={{ width: "80%", marginTop: '-50px' }}>
+          <p style={{ width: "80%", marginTop: '-50px', fontSize:'1.1rem' }}>
             &emsp;&emsp;&emsp; Hello, my name is Premchandra Kumar, and I’m a full stack developer with no experience. I  I have a strong command over both front-end and back-end technologies, allowing me to build complete and scalable applications. <br />
             &emsp;&emsp;&emsp; On the front-end side, I specialize in HTML, CSS, and JavaScript frameworks such as React and Angular. I’m passionate about creating intuitive user interfaces that provide an exceptional user experience. I pay great attention to detail, ensuring that the websites or applications I develop are responsive, visually appealing, and accessible across different devices and browsers. <br />
             &emsp;&emsp;&emsp;Moving to the back end, I’m proficient in server-side languages like Python, Java, or Node.js. I have extensive experience working with databases such as MySQL, PostgreSQL, and MongoDB, and I can design efficient database structures and write optimized queries. I’m familiar with RESTful APIs and know how to integrate them into applications to enable seamless communication between the front end and back end.
@@ -142,30 +142,33 @@ export default function App() {
             </svg></span>
             <span>Projects</span>
           </h1>
-          <div className="timeline">
-            <div className="project">
-              <h3 className='ph'>Learning Website</h3>
-              <img src="/static/image/pr1.png" alt="" width='80%' />
-              <hr />
-              <h5 className='pc'>Python + React + NodeJS</h5>
-              <p>&emsp;&emsp; A useful website for all fresher who want to learn coding. In this website you can add important note, search definition, login, sign up, change background, change font color etc. This website is responsible for all device and interface is attractive. You can also use this website for revision purpost and also give test, what you learn.
-                <li><span className='fw-bold'>Website Link: </span><a href="https://premnote.vercel.app/"> https://premnote.vercel.app/</a></li>
-                <li><span className='fw-bold'>Git repository:</span><a href="https://github.com/Sprem143/note2">https://github.com/Sprem143/note2</a></li>
+          <div className="container container-mobile">
+            <div className="row m-1 jcsb">
+              <div className="col-lg-5 col-sm-10 p-2 project dc">
+                <h3 className='ph'>Learning Website</h3>
+                <img src="/static/image/pr1.png" alt="" width='80%' />
+                <hr />
+                <h5 className='pc'>Python + React + NodeJS</h5>
+                <p>&emsp;&emsp; A useful website for all fresher who want to learn coding. In this website you can add important note, search definition, login, sign up, change background, change font color etc. This website is responsible for all device and interface is attractive. You can also use this website for revision purpost and also give test, what you learn.
+                  <li><span className='fw-bold'>Website Link: </span><a href="https://premnote.vercel.app/"> https://premnote.vercel.app/</a></li>
+                  <li><span className='fw-bold'>Git repository: </span><a href="https://github.com/Sprem143/note2">https://github.com/Sprem143/note2</a></li>
 
-              </p>
-            </div>
-            <div className="project">
-              <h3 className='ph'>Advance Calculator</h3>
-              <img src="/static/image/pr2.png" alt="" width='45%' />
-              <hr />
-              <h5 className='pc'>Python + React + NodeJS</h5>
-              <p> &emsp;&emsp;In this website user can calculate complex numerical expression at a time, get trigonimatrical agnle value of any degree in convience way. This website is quite easy to use and responsible for all layout.
-                <li><span className='fw-bold'>Website Link: </span><a href="https://calculator-beta-one-23.vercel.app/"> https://calculator-beta-one-23.vercel.app/</a></li>
-                <li><span className='fw-bold'>Git repository:</span><a href="https://github.com/Sprem143/portfolio1">https://github.com/Sprem143/portfolio1</a></li>
-              </p>
-              <br />
+                </p>
+              </div>
+              <div className="col-lg-5 col-sm-10 p-2 project dc">
+                <h3 className='ph'>Advance Calculator</h3>
+                <img src="/static/image/pr2.png" alt="" width='45%' />
+                <hr />
+                <h5 className='pc'>Python + React + NodeJS</h5>
+                <p> &emsp;&emsp;In this website user can calculate complex numerical expression at a time, get trigonimatrical agnle value of any degree in convience way. This website is quite easy to use and responsible for all layout.
+                  <li><span className='fw-bold'>Website Link: </span><a href="https://calculator-beta-one-23.vercel.app/"> https://calculator-beta-one-23.vercel.app/</a></li>
+                  <li><span className='fw-bold'>Git repository: </span><a href="https://github.com/Sprem143/portfolio1"> https://github.com/Sprem143/portfolio1</a></li>
+                </p>
+                <br />
+              </div>
             </div>
           </div>
+
 
         </section>
 
@@ -178,7 +181,7 @@ export default function App() {
             <span>Education</span>
           </h1>
           <div className="education">
-            <div style={{width:'20vw'}}></div>
+            <div style={{ width: '20vw' }}></div>
             <div className='degree'>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="brown" className="bi me-2 mb-2 bi-mortarboard-fill" viewBox="0 0 16 16">
                 <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z" />
@@ -226,8 +229,8 @@ export default function App() {
         <section id="contact">
           <h1 className="section-heading mb75px">
             <span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" className="bi me-2 bi-person-lines-fill" viewBox="0 0 16 16">
-  <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
-</svg></span>
+              <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
+            </svg></span>
             <span>Contact</span>
           </h1>
           <div className='con'>
@@ -239,27 +242,27 @@ export default function App() {
               <li className='fw-bold text-danger'>Current Address</li>
               <p className='text-dark'>Sector 121, Gali no 10, Near RS infra 3, Pin code-2201307, Uttar Pradesh</p>
               <p className='fw-bold text-danger'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
-</svg> Permanent Address Address</p>
-<p className="text-dark">Village Post- Hariraha, Ward No 09, Block- Raghopur, District-Supaul,Bihar, Pin code- 852215</p>
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+              </svg> Permanent Address Address</p>
+              <p className="text-dark">Village Post- Hariraha, Ward No 09, Block- Raghopur, District-Supaul,Bihar, Pin code- 852215</p>
             </div>
             <div className='con-div'>
               <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi me-2 mb-2  bi-telephone-outbound-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
               </svg></span> <span className='fw-bold fs-4'>Contact details</span>
-<hr />
-<p className='fw-bold'><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" className="bi me-2 mb-1 bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-</svg>Email</p>
-<p className='text-dark'>prem68265@gmail.com</p>
-<p><span className='fw-bold'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi me-2 mb-1 bi-telephone-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-</svg>Phone</span></p>
-<p className='text-dark'>7366943700</p>
-<p><span className='fw-bold text-secondary'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="green" className="bi me-1 bi-whatsapp" viewBox="0 0 16 16">
-  <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-</svg> Whatsapp Number</span></p>
-<p className='text-dark'>7366943700</p>
+              <hr />
+              <p className='fw-bold'><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" className="bi me-2 mb-1 bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg>Email</p>
+              <p className='text-dark'>prem68265@gmail.com</p>
+              <p><span className='fw-bold'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi me-2 mb-1 bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+              </svg>Phone</span></p>
+              <p className='text-dark'>7366943700</p>
+              <p><span className='fw-bold text-secondary'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="green" className="bi me-1 bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg> Whatsapp Number</span></p>
+              <p className='text-dark'>7366943700</p>
             </div>
           </div>
         </section>
