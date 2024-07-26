@@ -213,8 +213,9 @@ flex-direction: column;
     margin-bottom: 50px;
     box-shadow: 0px 0px 2px 2px gray;
   }
-  .skill-progress>div{
+  .clr{
     border-radius: 20px 0px 0px 20px;
+    height: 21px !important;
   }
   .mb-blue{
     background-color: blue;
@@ -290,7 +291,7 @@ flex-direction: column;
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
  }
  .ed-h{
   font-weight: bold;
@@ -326,6 +327,9 @@ flex-direction: column;
    .timeline{
     flex-direction: column;
    }
+   #atxt{
+    font-size: 4vh;
+   }
    .project{
     margin: 10px;
     width: 80%;
@@ -339,7 +343,7 @@ flex-direction: column;
     width: 60%;
    }
    #name-social-container {
-    margin-top: -4vh !important;
+    margin-top: -2vh !important;
   }
   .container-mobile{
     display: flex;

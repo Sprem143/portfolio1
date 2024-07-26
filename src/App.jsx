@@ -1,6 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 export default function App() {
   return (
     <>
@@ -19,7 +21,7 @@ export default function App() {
         <div id="name-social-container">
           <div className="text-centre">
             <h1 id="my-name">Prem Kumar</h1>
-            <span className='text-white'>I am</span> <h2 id='atxt' data-text="FULL STACK WEB DEVELOPER">.</h2> </div>
+            <span className='text-white'>I am</span> <h4 id='atxt' data-text="MERN STACK DEVELOPER">.</h4> </div>
 
           <div className=" text-centre animate__animated animate__fadeInDownBig">
             <ul className="social-icons horizental-list text-centre">
@@ -48,7 +50,7 @@ export default function App() {
       <main>
         <section id="about">
           <div id="my-image"> <img src="/static/image/profile.jpg" alt="NA" /></div>
-          <p style={{ width: "80%", marginTop: '-50px', fontSize:'1.1rem' }}>
+          <p style={{ width: "80%", marginTop: '-50px', fontSize: '1.1rem' }}>
             &emsp;&emsp;&emsp; Hello, my name is Premchandra Kumar, and I’m a full stack developer with no experience. I  I have a strong command over both front-end and back-end technologies, allowing me to build complete and scalable applications. <br />
             &emsp;&emsp;&emsp; On the front-end side, I specialize in HTML, CSS, and JavaScript frameworks such as React and Angular. I’m passionate about creating intuitive user interfaces that provide an exceptional user experience. I pay great attention to detail, ensuring that the websites or applications I develop are responsive, visually appealing, and accessible across different devices and browsers. <br />
             &emsp;&emsp;&emsp;Moving to the back end, I’m proficient in server-side languages like Python, Java, or Node.js. I have extensive experience working with databases such as MySQL, PostgreSQL, and MongoDB, and I can design efficient database structures and write optimized queries. I’m familiar with RESTful APIs and know how to integrate them into applications to enable seamless communication between the front end and back end.
@@ -66,72 +68,102 @@ export default function App() {
             </svg>
             <p>Skills</p>
           </h1>
-          <div className="skill-display">
-            <div className="skill-progress">
-              <div className="eighty-five mb-blue dfac">
-                <div className="skill-name">
-                  <span>Java</span>
+          <div className="container-fluid p-4 dc">
+            <div className="row">
+              <div className="skill-display">
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                  <ScrollAnimation animateIn="fadeInLeft">
+                    <div className="eighty-five mb-blue dfac clr">
+                      <div className="skill-name">
+                        <span>Java</span>
+                      </div>
+                    </div>
+                  </ScrollAnimation>
+                </div>
+
+
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="forty mb-red dfac clr">
+                    <div className="skill-name">
+                      <span>Python</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
+                </div>
+
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="eighty mb-grey dfac clr">
+                    <div className="skill-name">
+                      <span>HTML</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
                 </div>
               </div>
-            </div>
+              <div className="skill-display">
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="ninty mb-green dfac clr">
+                    <div className="skill-name">
+                      <span>CSS</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
+                </div>
 
-
-            <div className="skill-progress">
-              <div className="forty mb-red dfac">
-                <div className="skill-name">
-                  <span>Python</span>
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="eighty mb-blue dfac clr">
+                    <div className="skill-name">
+                      <span>JS</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
+                </div>
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="eighty-five mb-red dfac clr">
+                    <div className="skill-name">
+                      <span>Node JS</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
                 </div>
               </div>
-            </div>
-
-            <div className="skill-progress">
-              <div className="eighty mb-grey dfac">
-                <div className="skill-name">
-                  <span>HTML</span>
+              <div className="skill-display">
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="eighty-five mb-red dfac clr">
+                    <div className="skill-name">
+                      <span>SQL</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
+                </div>
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="forty mb-grey dfac clr">
+                    <div className="skill-name">
+                      <span>Spring</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
+                </div>
+                <div className="skill-progress col-lg-3 col-md-4 col-sm-6">
+                <ScrollAnimation animateIn="fadeInLeft">
+                  <div className="forty mb-blue dfac clr">
+                    <div className="skill-name">
+                      <span>React</span>
+                    </div>
+                  </div>
+                  </ScrollAnimation>
                 </div>
               </div>
             </div>
           </div>
-          <div className="skill-display">
-            <div className="skill-progress">
-              <div className="ninty mb-green dfac">
-                <div className="skill-name">
-                  <span>CSS</span>
-                </div>
-              </div>
-            </div>
 
-            <div className="skill-progress">
-              <div className="eighty mb-blue dfac">
-                <div className="skill-name">
-                  <span>JS</span>
-                </div>
-              </div>
-            </div>
-            <div className="skill-progress">
-              <div className="eighty-five mb-red dfac">
-                <div className="skill-name">
-                  <span>Node JS</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="skill-display">
-            <div className="skill-progress">
-              <div className="eighty-five mb-red dfac">
-                <div className="skill-name">
-                  <span>SQL</span>
-                </div>
-              </div>
-            </div>
-            <div className="skill-progress">
-              <div className="forty mb-grey dfac">
-                <div className="skill-name">
-                  <span>Spring</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         <section id="experience">
@@ -145,6 +177,7 @@ export default function App() {
           <div className="container container-mobile">
             <div className="row m-1 jcsb">
               <div className="col-lg-5 col-sm-10 p-2 project dc">
+              <ScrollAnimation animateIn="flipInY" className='dc'>
                 <h3 className='ph'>Learning Website</h3>
                 <img src="/static/image/pr1.png" alt="" width='80%' />
                 <hr />
@@ -154,8 +187,10 @@ export default function App() {
                   <li><span className='fw-bold'>Git repository: </span><a href="https://github.com/Sprem143/note2">https://github.com/Sprem143/note2</a></li>
 
                 </p>
+                </ScrollAnimation>
               </div>
               <div className="col-lg-5 col-sm-10 p-2 project dc">
+              <ScrollAnimation animateIn="flipInY" className='dc'>
                 <h3 className='ph'>Advance Calculator</h3>
                 <img src="/static/image/pr2.png" alt="" width='45%' />
                 <hr />
@@ -165,6 +200,7 @@ export default function App() {
                   <li><span className='fw-bold'>Git repository: </span><a href="https://github.com/Sprem143/portfolio1"> https://github.com/Sprem143/portfolio1</a></li>
                 </p>
                 <br />
+                </ScrollAnimation>
               </div>
             </div>
           </div>
@@ -183,6 +219,7 @@ export default function App() {
           <div className="education">
             <div style={{ width: '20vw' }}></div>
             <div className='degree'>
+            <ScrollAnimation animateIn="zoomIn">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="brown" className="bi me-2 mb-2 bi-mortarboard-fill" viewBox="0 0 16 16">
                 <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z" />
                 <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
@@ -191,10 +228,12 @@ export default function App() {
               <li><b>Subject: </b>Econimics</li>
               <li><b>Session: </b>2019-2022</li>
               <li><b>Obtained Percentage: </b>68</li>
+              </ScrollAnimation>
             </div>
 
 
             <div className='degree'>
+            <ScrollAnimation animateIn="zoomIn">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="brown" className=" me-2 bi bi-pen-fill" viewBox="0 0 16 16">
                 <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001" />
               </svg></span> <span className='ed-h'>Polytechnic</span>
@@ -202,9 +241,11 @@ export default function App() {
               <li><b>Course: </b>Electrical Engg.</li>
               <li><b>Session: </b>2016-2019</li>
               <li><b>Obtained Percentage: </b>72</li>
+              </ScrollAnimation>
             </div>
 
             <div className='degree'>
+            <ScrollAnimation animateIn="zoomIn">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="brown" className="me-2 bi bi-book" viewBox="0 0 16 16">
                 <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
               </svg></span> <span className='ed-h'>Intermediate</span>
@@ -212,9 +253,11 @@ export default function App() {
               <li><b>Subject: </b>Science</li>
               <li><b>Session: </b>2014-2016</li>
               <li><b>Obtained Percentage: </b>67</li>
+              </ScrollAnimation>
             </div>
 
             <div className='degree'>
+            <ScrollAnimation animateIn="zoomIn">
               <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="brown" class="bi me-2 bi-pencil-square" viewBox="0 0 16 16">
                 <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
                 <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
@@ -222,6 +265,7 @@ export default function App() {
               <li><b>Board: </b>BSEB, Patna</li>
               <li><b>Session: </b>2013-2014</li>
               <li><b>Obtained Percentage: </b>74</li>
+              </ScrollAnimation>
             </div>
           </div>
         </section>
